@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import LoginPage from './Login.js';
+import Login from './Login.js';
 
 function App() {
   return (
-    <LoginPage/>
+    <Login/>
   );
 }
+
 
 export default App;

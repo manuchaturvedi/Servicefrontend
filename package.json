@@ -1,5 +1,5 @@
 {
-  "homepage":"http://NCS-Technologies.github.io/ServiceBookingSystem1.0",
+  "homepage": "http://NCS-Technologies.github.io/ServiceBookingSystem1.0",
   "name": "servicebookingsystem1.0",
   "version": "0.1.0",
   "private": true,
@@ -7,7 +7,9 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "^4.5.3",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
@@ -17,9 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "predeploy": "npm run build",
-"deploy": "master",
-    "eject": "react-scripts eject"  },
-    
+    "deploy": "master -d build",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",

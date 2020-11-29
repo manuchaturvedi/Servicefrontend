@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f1b138;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,4 +35,128 @@
   to {
     transform: rotate(360deg);
   }
+}
+.imgstyle{
+  height: 100px;
+  width: 100px;
+}
+.flexstyle{
+  background-color: rgb(236, 222, 222) ;
+  align-items: center;
+
+}
+
+
+
+.box{
+  background-color: rgb(248, 247, 247); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  width: 1200px;
+  position: absolute;
+  left: 6%;
+  top:18%;
+  
+  }
+  .heading1{
+    padding:10px;
+    border-radius: 3px;
+    }
+.heading2{
+  background-color: rgba(145, 220, 229, 0.692);
+  margin-bottom: 1px white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  font-size: 2em;
+}
+.question{
+  background-color: white;
+  font-style: initial;
+  font-size: 25px;
+  padding:20px;
+  font-family: 'Patrick Hand', cursive;
+    border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.buttonclass{
+margin-top: 20px;
+
+display: block;
+}
+.ending{
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.point{
+  padding: 20px;
+}
+.message{
+  width: 100%;
+  margin-top:px
+}
+.questionstyle{
+  color:#f7faf5;
+}
+.bar{
+  background: black;
+  color:white;
+  display: block;
+  padding: 5px;
+
+}
+.timer{
+   display: inline-block;
+  align-items: center;
+  margin-left: 35%;
+}
+.endbutton{
+ margin:20px; 
+ display: inline-block;
+}
+.error{
+  color:red;
+  font-size: 18px;
+}
+
+@media(max-width: 800px) {
+.box{
+  max-width: 303px;
+  margin:0px;
+  max-height: 900px;
+}
+}
+.but{
+justify-items: center;
+justify-content: center;
+text-align: center;
+align-items: center;
+}
+input[type=text] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block;
+}
+input[type=email] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  display: block;
+}
+.buttonsubmit{
+  background-color: #008CBA; /* Green */
+  border: none;
+  border-radius: 4px;
+  color: white;
+  margin-top: 5px;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

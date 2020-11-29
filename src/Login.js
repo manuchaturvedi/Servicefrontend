@@ -1,76 +1,90 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, {Component } from 'react'
+import Modal from 'react-bootstrap/Modal'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form'
+import FormControl from 'react-bootstrap/FormControl';
+import Alert from 'react-bootstrap/Alert'
 
-class LoginPage extends Component {
-  constructor() {
-    super();
-    this.state = {
-      username: '',
-      password: '',
-      error: '',
-    };
+export default class Login extends Component {
+    constructor(props)
+    {super(props)
+        this.login=this.login.bind(this);
+        this.handleChange=this.handleChange.bind(this);
+        this.signup=this.signup.bind(this);
 
-    this.handlePassChange = this.handlePassChange.bind(this);
-    this.handleUserChange = this.handleUserChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.dismissError = this.dismissError.bind(this);
-  }
+     this.state={
+         email:"",
+         password:"",
+         show:true,
+          errorlogin:false,
+          errorsignin:false
 
-  dismissError() {
-    this.setState({ error: '' });
-  }
-
-  handleSubmit(evt) {
-    evt.preventDefault();
-
-    if (!this.state.username) {
-      return this.setState({ error: 'Username is required' });
+     }
     }
-
-    if (!this.state.password) {
-      return this.setState({ error: 'Password is required' });
+    
+    login(e){
+        
+    }  
+    handleChange(e){
+        this.setState({
+            [e.target.name]:e.target.value
+        })
     }
-
-    return this.setState({ error: '' });
-  }
-
-  handleUserChange(evt) {
-    this.setState({
-      username: evt.target.value,
-    });
-  };
-
-  handlePassChange(evt) {
-    this.setState({
-      password: evt.target.value,
-    });
-  }
-
-  render() {
-    // NOTE: I use data-attributes for easier E2E testing
-    // but you don't need to target those (any css-selector will work)
-
-    return (
-      <div className="Login">
-        <form onSubmit={this.handleSubmit}>
-          {
-            this.state.error &&
-            <h3 data-test="error" onClick={this.dismissError}>
-              <button onClick={this.dismissError}>✖</button>
-              {this.state.error}
-            </h3>
-          }
-          <label>User Name</label>
-          <input type="text" data-test="username" value={this.state.username} onChange={this.handleUserChange} />
-
-          <label>Password</label>
-          <input type="password" data-test="password" value={this.state.password} onChange={this.handlePassChange} />
-
-          <input type="submit" value="Log In" data-test="submit" />
-        </form>
-      </div>
-    );
-  }
+    signup(e){
+       
+    }
+    
+    render() {
+        return (
+            
+<div>
+      <Modal show={this.state.show}>
+        <Modal.Header closeButton>
+          <Modal.Title>Login to Take test</Modal.Title>
+        </Modal.Header>
+             <Modal.Body>  <form>
+             <Form.Group controlId="formBasicEmail">
+             <Form.Label>Email address</Form.Label>
+              <FormControl 
+              type="email"
+               name="email"
+               id="email"
+               placeholder="enter email address"
+               onChange={this.handleChange}
+               value={this.state.email}
+              />      
+                 
+              </Form.Group>
+                <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" name="password"
+                  id="password"                    
+                  placeholder="enter the password"
+                  onChange={this.handleChange}
+                  value={this.state.password}/>
+                  <Form.Text className="text-muted">
+                    {this.state.errorlogin?<Alert variant="danger">wrong password or email,please signin if you are a new user</Alert>:this.state.errorsignin?<Alert variant="warning">if you are a new user please use proper email and password</Alert>:<div>"If you don't have account then please! click signup"</div> }
+              </Form.Text> 
+                </Form.Group>
+                <Form.Group controlId="formBasicCheckbox">
+                 </Form.Group>
+                    </form>
+               </Modal.Body>
+               <Modal.Footer>
+          <Button variant="primary" onClick={this.signup}>
+            Signup
+          </Button>
+          <Button variant="primary" onClick={this.login}>
+            Login
+          </Button>
+        </Modal.Footer>
+      </Modal>
+            </div>
+        )
+    }
 }
 
-export default LoginPage;
+
+
+
+

@@ -165,4 +165,15 @@ input[type=email] {
   margin-top:170px;
   margin-left:38%;
   margin-right:25%;
+
+}
+.button{
+background-color: rgb(76, 144, 175); /* Green */
+  border: none;
+  color: white;
+  padding: 9px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }

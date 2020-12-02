@@ -60,7 +60,7 @@ export default class Login extends Component {
                     </div>
                 </div>
                 {this.renderRedirect()}
-                <button onClick={this.setRedirect}>LOGIN</button>
+                <button className="button" onClick={this.setRedirect}>LOGIN</button>
                 <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>
                 </p>

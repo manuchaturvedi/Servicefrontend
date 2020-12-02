@@ -1,90 +1,72 @@
-import React, {Component } from 'react'
-import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form'
-import FormControl from 'react-bootstrap/FormControl';
-import Alert from 'react-bootstrap/Alert'
-
+import React, { Component } from "react";
+import './App.css';
+import Signin from './signin.js';
+import SideBar from './sidebar.js';
+import AddAgent from './AddAgent.js';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link,
+    Redirect
+  } from "react-router-dom";
+  
 export default class Login extends Component {
-    constructor(props)
-    {super(props)
-        this.login=this.login.bind(this);
-        this.handleChange=this.handleChange.bind(this);
-        this.signup=this.signup.bind(this);
-
-     this.state={
-         email:"",
-         password:"",
-         show:true,
-          errorlogin:false,
-          errorsignin:false
-
-     }
+    constructor(props) {
+    super(props);
+        this.state = {
+        redirect: false,
+        username:'',
+        password:''
+      }
+      this.handleChange = this.handleChange.bind(this);
     }
-    
-    login(e){
-        
-    }  
-    handleChange(e){
+      setRedirect = () => {
+       if(this.state.username=='admin' && this.state.password=='admin')
+        this.setState({
+          redirect: true
+        })
+      }
+      handleChange=(e)=>{
         this.setState({
             [e.target.name]:e.target.value
         })
     }
-    signup(e){
-       
-    }
-    
+      renderRedirect = () => {
+        if (this.state.redirect) {
+          return <Redirect to='/AddAgent' />
+        }
+      }
     render() {
         return (
+          <div className="kon">
+            <form>
+                <h3>Sign In</h3>
+
+                <div className="form-group">
+                    <label>Email address</label>
+                    <input type="email" className="form-control" name="username" placeholder="Enter email" value={this.state.username}  onChange={this.handleChange}/>
+                </div>
+
+                <div className="form-group">
+                    <label>Password</label>
+                    <input type="password" className="form-control" name="password" placeholder="Enter password" value={this.state.password}  onChange={this.handleChange}/>
+                </div>
+
+                <div className="form-group">
+                    <div className="custom-control custom-checkbox">
+                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+                    </div>
+                </div>
+                {this.renderRedirect()}
+                <button onClick={this.setRedirect}>LOGIN</button>
+                <p className="forgot-password text-right">
+                    Forgot <a href="#">password?</a>
+                </p>
+            </form>
             
-<div>
-      <Modal show={this.state.show}>
-        <Modal.Header closeButton>
-          <Modal.Title>Login to Take test</Modal.Title>
-        </Modal.Header>
-             <Modal.Body>  <form>
-             <Form.Group controlId="formBasicEmail">
-             <Form.Label>Email address</Form.Label>
-              <FormControl 
-              type="email"
-               name="email"
-               id="email"
-               placeholder="enter email address"
-               onChange={this.handleChange}
-               value={this.state.email}
-              />      
-                 
-              </Form.Group>
-                <Form.Group controlId="formBasicPassword">
-                <Form.Label>Password</Form.Label>
-                <Form.Control type="password" name="password"
-                  id="password"                    
-                  placeholder="enter the password"
-                  onChange={this.handleChange}
-                  value={this.state.password}/>
-                  <Form.Text className="text-muted">
-                    {this.state.errorlogin?<Alert variant="danger">wrong password or email,please signin if you are a new user</Alert>:this.state.errorsignin?<Alert variant="warning">if you are a new user please use proper email and password</Alert>:<div>"If you don't have account then please! click signup"</div> }
-              </Form.Text> 
-                </Form.Group>
-                <Form.Group controlId="formBasicCheckbox">
-                 </Form.Group>
-                    </form>
-               </Modal.Body>
-               <Modal.Footer>
-          <Button variant="primary" onClick={this.signup}>
-            Signup
-          </Button>
-          <Button variant="primary" onClick={this.login}>
-            Login
-          </Button>
-        </Modal.Footer>
-      </Modal>
             </div>
-        )
+        );
     }
 }
-
-
-
-
-

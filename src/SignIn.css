@@ -1,0 +1,16 @@
+.koni{
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    margin-left: 380px;
+}
+.koni h2{
+    margin: 1em 0 0.5em 0;
+	color: #343434;
+	font-weight: normal;
+	font-family: 'Ultra', sans-serif;   
+	font-size: 36px;
+	line-height: 36px;
+	text-transform: uppercase;
+	text-shadow: 0 2px rgb(126, 42, 42), 0 3px #777;
+}

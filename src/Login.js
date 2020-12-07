@@ -3,6 +3,7 @@ import './App.css';
 import Signin from './signin.js';
 import SideBar from './sidebar.js';
 import AddAgent from './AddAgent.js';
+import background from './background.png';
 import {
     BrowserRouter as Router,
     Switch,
@@ -39,7 +40,7 @@ export default class Login extends Component {
       }
     render() {
         return (
-          <div className="kon">
+          <div className="kon" >
             <form>
                 <h3>Sign In</h3>
 

@@ -10,7 +10,7 @@ import {
   Link
 } from "react-router-dom";
 function Home() {
-  return <div>
+  return <div className="container">
     <Login/>
     </div>;
 }
@@ -29,7 +29,7 @@ function AddBookingfun() {
 function App() {
   return (
     <Router>
-    <div>
+    <div className="container">
 
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}

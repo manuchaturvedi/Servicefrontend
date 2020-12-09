@@ -6,7 +6,7 @@ export default class AddAgent extends Component {
           <div className="koni">
             <form>
                 <h2>Add Agent</h2>
-
+                <p>Monday,07/12/2020-04:00PM</p>
                 <div className="form-group">
                     <label>Name of Agent</label>
                     <input type="email" className="form-control" placeholder="Agent Name" />
@@ -33,7 +33,7 @@ export default class AddAgent extends Component {
                     <input type="text" className="form-control" placeholder="Password" />
                 </div>
 
-                <button type="submit" className="btn btn-success btn-block">Add Agent</button>
+                <button className="button" >Register agent</button>
             </form>
             </div>
         );

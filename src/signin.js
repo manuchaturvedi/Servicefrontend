@@ -6,6 +6,7 @@ export default class Signin extends Component {
           <div className="koni">
             <form>
                 <h2>Add Booking</h2>
+                <p>Monday,07/12/2020-04:00PM</p>
 
                 <div className="form-group">
                     <label>Name of customer</label>
@@ -32,8 +33,7 @@ export default class Signin extends Component {
                     <label>Date and time alloted.</label>
                     <input type="text" className="form-control" placeholder="date and time" />
                 </div>
-
-                <button type="submit" className="btn btn-warning btn-block">Register Booking</button>
+                <button className="button" >add booking</button>
             </form>
             </div>
         );

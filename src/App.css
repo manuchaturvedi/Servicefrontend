@@ -1,19 +1,17 @@
 
-input[type=password] {
+.kon input[type=password] {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
   box-shadow: 3px 3px 4px #000000;
-  display: block;
 }
-input[type=email] {
+.kon input[type=email] {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   resize: vertical;
   box-shadow: 3px 3px 4px #000000;
-  display: block;
 }
 .buttonsubmit{
   background-color: #ee0e0e; /* Green */
@@ -87,13 +85,13 @@ input[type=email] {
 
   top: 0;
 }
-.form-group label{
+.form-groups label{
   color:#FFFFFF;
   text-shadow: 2px 2px 4px #000000;
-
   margin-left: 35%;
   font-weight:700;
-  font-size:200%
+  font-size:200%;
+  margin-bottom:10px;
   
 }
 .button{

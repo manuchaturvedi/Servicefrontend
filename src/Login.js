@@ -68,17 +68,17 @@ export default class Login extends Component {
           <div className="kon" >
             <form>
 
-                <div className="form-group">
+                <div className="form-groups">
                     <label>Login</label>
                     <input type="email" className="form-control" name="username" placeholder="Enter email" value={this.state.username}  onChange={this.handleChange}/>
                 </div>
 
-                <div className="form-group">
+                <div className="form-groups">
                     <label>Password</label>
                     <input type="password" className="form-control" name="password" placeholder="Enter password" value={this.state.password}  onChange={this.handleChange}/>
                 </div>
 
-                <div className="form-group">
+                <div className="form-groups">
                     <div className="custom-control custom-checkbox">
                     <p className="forgot-password text-right">
                     Forgot <a href="#">password?</a>

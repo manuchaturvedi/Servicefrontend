@@ -1,18 +1,81 @@
+.koni input[type=text] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
+	box-shadow: 3px 3px 4px #000000;
+	display: block;
+	width: 500px;
+	margin-left: 200px;
 
+  }
+ .koni  input[type=email] {
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
+	box-shadow: 3px 3px 4px #000000;
+	display: inline-block;
+	margin-left: 200px;
+	width: 500px;
+
+  }
+  .form-group label{
+	color:#181616;
+	text-shadow: 0px 0px 2px #000000;
+  
+	margin-left: 0;
+	position: absolute;
+	margin-bottom:500px;
+
+	font-weight:500;
+	font-size:120%
+	
+  }
+  .form-group{
+	  margin-bottom:200px;
+	  padding-top:20px;
+  }
 .koni{
 	
     margin: 0;
     padding: 0;
-    width: 60%;
-    margin-left: 380px;
+    width: 80%;
+    margin-left: 280px;
 }
 .koni h2{
     margin: 1em 0 0.5em 0;
-	color: #343434;
+	color: #0f0e0e;
 	font-weight: normal;
 	font-family: 'Ultra', sans-serif;   
 	font-size: 36px;
 	line-height: 36px;
+	margin-left:31%;
 	text-transform: uppercase;
-	text-shadow: 0 2px rgb(126, 42, 42), 0 3px #777;
+	text-shadow: 0 2px rgb(17, 10, 10), 0 3px #777;
 }
+
+.koni p{
+	margin-left:27%;
+	color:#0c0d0e;
+	font-size:130%;
+	font-weight: 1000;
+	text-shadow: 1px 1px 2px #000000;
+	height: var(--heading-height);
+	margin-top: 40px;
+	margin-bottom:10px;
+  }
+  
+.button{
+	background-color: rgb(240, 14, 33); /* Green */
+	  border: none;
+	  color: white;
+	  padding: 9px 40px;
+	  text-align: center;
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	  text-decoration: none;
+	  display: inline-block;
+	  margin-left: 35%;
+	  font-size: 16px;
+	  border-radius:10px;
+	}

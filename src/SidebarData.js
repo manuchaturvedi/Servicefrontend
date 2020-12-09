@@ -17,8 +17,8 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Add Booking ',
-    path: '/AddBooking',
+    title: 'View Booking ',
+    path: '/BookingTable',
     icon: <AiIcons.AiFillFileAdd />,
     cName: 'nav-text'
   },
@@ -29,8 +29,8 @@ export const SidebarData = [
     cName: 'nav-text'
   },
   {
-    title: 'Booking Details',
-    path: '/messages',
+    title: 'View Agent',
+    path: '/AgentTable',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },

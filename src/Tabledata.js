@@ -3,23 +3,23 @@ import './TableStyle.css';
 
 class Table extends Component {
    constructor(props) {
-      super(props) //since we are extending class Table so we have to use super in order to override Component class constructor
+      super(props) //since we are extending class Table so we have to use super in order to overrAgentIde Component class constructor
       this.state = { //state is by default an object
          students: [
-            { id: 1, name: 'Wasif', age: 21, email: 'wasif@email.com' },
-            { id: 2, name: 'Ali', age: 19, email: 'ali@email.com' },
-            { id: 3, name: 'Saad', age: 16, email: 'saad@email.com' },
-            { id: 4, name: 'Asad', age: 25, email: 'asad@email.com' }
+            { AgentId: 1, AgentName: 'Wasif Kan', age: 21, email: 'wasif@email.com' },
+            { AgentId: 2, AgentName: 'Manu', age: 19, email: 'manu@email.com' },
+            { AgentId: 3, AgentName: 'jone wick', age: 16, email: 'saad@email.com' },
+            { AgentId: 4, AgentName: 'Adam crick', age: 25, email: 'asad@email.com' }
          ]
       }
    }
    renderTableData() {
     return this.state.students.map((student, index) => {
-       const { id, name, age, email } = student //destructuring
+       const { AgentId, AgentName, age, email } = student //destructuring
        return (
-          <tr key={id}>
-             <td>{id}</td>
-             <td>{name}</td>
+          <tr key={AgentId}>
+             <td>{AgentId}</td>
+             <td>{AgentName}</td>
              <td>{age}</td>
              <td>{email}</td>
           </tr>
@@ -37,7 +37,7 @@ class Table extends Component {
       return (
         <div>
         <h1 id='title'>View Booking</h1>
-        <table id='students'>
+        <table Id='students'>
            <tbody>
               <tr>{this.renderTableHeader()}</tr>
               {this.renderTableData()}

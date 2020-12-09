@@ -42,7 +42,7 @@ export default class Login extends Component {
     }
       renderRedirect = () => {
         if (this.state.redirect) {
-          return <Redirect to='/AddAgent' />
+          return <Redirect to='/BookingTable' />
         }
       }
     render() {

@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Servicefrontend/static/css/main.843144e6.chunk.css",
-    "main.js": "/Servicefrontend/static/js/main.9f173b25.chunk.js",
-    "main.js.map": "/Servicefrontend/static/js/main.9f173b25.chunk.js.map",
-    "runtime-main.js": "/Servicefrontend/static/js/runtime-main.e7fd6e23.js",
-    "runtime-main.js.map": "/Servicefrontend/static/js/runtime-main.e7fd6e23.js.map",
+    "main.css": "/Servicefrontend/static/css/main.94774bc6.chunk.css",
+    "main.js": "/Servicefrontend/static/js/main.7f95ec14.chunk.js",
+    "main.js.map": "/Servicefrontend/static/js/main.7f95ec14.chunk.js.map",
+    "runtime-main.js": "/Servicefrontend/static/js/runtime-main.22bbfd21.js",
+    "runtime-main.js.map": "/Servicefrontend/static/js/runtime-main.22bbfd21.js.map",
     "static/css/2.1a02f21c.chunk.css": "/Servicefrontend/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.7cc31959.chunk.js": "/Servicefrontend/static/js/2.7cc31959.chunk.js",
-    "static/js/2.7cc31959.chunk.js.map": "/Servicefrontend/static/js/2.7cc31959.chunk.js.map",
-    "static/js/3.cafe7f1d.chunk.js": "/Servicefrontend/static/js/3.cafe7f1d.chunk.js",
-    "static/js/3.cafe7f1d.chunk.js.map": "/Servicefrontend/static/js/3.cafe7f1d.chunk.js.map",
+    "static/js/2.d1bceea8.chunk.js": "/Servicefrontend/static/js/2.d1bceea8.chunk.js",
+    "static/js/2.d1bceea8.chunk.js.map": "/Servicefrontend/static/js/2.d1bceea8.chunk.js.map",
+    "static/js/3.cc8a1a1e.chunk.js": "/Servicefrontend/static/js/3.cc8a1a1e.chunk.js",
+    "static/js/3.cc8a1a1e.chunk.js.map": "/Servicefrontend/static/js/3.cc8a1a1e.chunk.js.map",
     "index.html": "/Servicefrontend/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/Servicefrontend/static/css/2.1a02f21c.chunk.css.map",
-    "static/css/main.843144e6.chunk.css.map": "/Servicefrontend/static/css/main.843144e6.chunk.css.map",
-    "static/js/2.7cc31959.chunk.js.LICENSE.txt": "/Servicefrontend/static/js/2.7cc31959.chunk.js.LICENSE.txt",
+    "static/css/main.94774bc6.chunk.css.map": "/Servicefrontend/static/css/main.94774bc6.chunk.css.map",
+    "static/js/2.d1bceea8.chunk.js.LICENSE.txt": "/Servicefrontend/static/js/2.d1bceea8.chunk.js.LICENSE.txt",
     "static/media/index.css": "/Servicefrontend/static/media/background.3144c0f0.png",
     "static/media/halfback.98c0409b.png": "/Servicefrontend/static/media/halfback.98c0409b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e7fd6e23.js",
+    "static/js/runtime-main.22bbfd21.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.7cc31959.chunk.js",
-    "static/css/main.843144e6.chunk.css",
-    "static/js/main.9f173b25.chunk.js"
+    "static/js/2.d1bceea8.chunk.js",
+    "static/css/main.94774bc6.chunk.css",
+    "static/js/main.7f95ec14.chunk.js"
   ]
 }

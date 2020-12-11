@@ -14,7 +14,7 @@ export default class Signin extends Component {
 
                 <div className="form-group">
                     <label>Name of customer</label>
-                    <input type="email" className="form-control" placeholder="Custimer Name" />
+                    <input type="email" className="form-control" placeholder="Customer Name" />
                 </div>
 
                 <div className="form-group">
@@ -23,7 +23,7 @@ export default class Signin extends Component {
                 </div>
                 <div className="form-group">
                     <label>Contact No.</label>
-                    <input type="text" className="form-control" placeholder="Enter phone no." />
+                    <input type="number" className="form-control" placeholder="Enter phone no." />
                 </div>
                 <div className="form-group">
                     <label>query</label>
@@ -35,7 +35,7 @@ export default class Signin extends Component {
                 </div>
                 <div className="form-group">
                     <label>Date and time alloted.</label>
-                    <input type="text" className="form-control" placeholder="date and time" />
+                    <input type="datetime-local" className="form-control" placeholder="date and time" value="2020-12-01T19:30" />
                 </div>
                 <button className="button" >add booking</button>
             </form>

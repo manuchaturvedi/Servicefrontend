@@ -22,11 +22,11 @@ export default class AddAgent extends Component {
                 </div>
                 <div className="form-group">
                     <label>Contact No.</label>
-                    <input type="text" className="form-control" placeholder="Enter phone no." />
+                    <input type="number" className="form-control" placeholder="Enter phone no." />
                 </div>
                 <div className="form-group">
                     <label>Join on</label>
-                    <input type="text" className="form-control" placeholder="Join Date" />
+                    <input type="datetime-local" className="form-control" placeholder="Join Date" value="2020-12-01T19:30" />
                 </div>
                 <div className="form-group">
                     <label>UserName Alloted.</label>

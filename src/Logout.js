@@ -26,7 +26,7 @@ export default function Logout() {
   };
  const renderRedirect = () => {
     console.log("hello");
-    window.location.reload();
+    window.location.replace("https://manuchaturvedi.github.io/Servicefrontend/");
       return <Redirect to='/BookingTable' />
     
   }

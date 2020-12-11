@@ -23,21 +23,21 @@ export default class Signin extends Component {
                 </div>
                 <div className="form-group">
                     <label>Contact No.</label>
-                    <input type="number" className="form-control" placeholder="Enter phone no." />
+                    <input type="number" className="form-control" placeholder="Phone No:." />
                 </div>
                 <div className="form-group">
-                    <label>query</label>
+                    <label>Query</label>
                     <input type="text" className="form-control" placeholder="Query" />
                 </div>
                 <div className="form-group">
                     <label>Agent Assigned.</label>
-                    <input type="text" className="form-control" placeholder="Enter agent name" />
+                    <input type="text" className="form-control" placeholder="Agent Name" />
                 </div>
                 <div className="form-group">
-                    <label>Date and time alloted.</label>
+                    <label>Date and Time Alloted.</label>
                     <input type="datetime-local" className="form-control" placeholder="date and time" value="2020-12-01T19:30" />
                 </div>
-                <button className="button" >add booking</button>
+                <button className="button" >Add Booking</button>
             </form>
             </div>
         );

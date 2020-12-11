@@ -56,7 +56,7 @@ export default class Login extends Component {
               <h6>Powered By:</h6>
                <h5> NCS Technologies
               </h5>
-              <div style={{color: '',padding:'5px',}}>
+              <div style={{color: '',padding:'5px',cursor: 'pointer'}}>
               <IconContext.Provider
                   value={{ color: '#25d366', size: '50px' }} >
               <FaIcons.FaWhatsappSquare size={45}  />

@@ -1,12 +1,16 @@
 import React, { Component } from "react";
 import './SignIn.css';
+let time = new Date().toLocaleString();
+var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var d = new Date();
+var day = days[ d.getDay() ];
 export default class AddAgent extends Component {
     render() {
         return (
           <div className="koni">
             <form>
                 <h2>Add Agent</h2>
-                <p>Monday,07/12/2020-04:00PM</p>
+        <p>{day}-{time}</p>
                 <div className="form-group">
                     <label>Name of Agent</label>
                     <input type="email" className="form-control" placeholder="Agent Name" />

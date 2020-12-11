@@ -6,7 +6,8 @@ import * as AiIcons from 'react-icons/ai';
 import SideBar from './sidebar.js';
 import AddAgent from './AddAgent.js';
 import background from './background.png';
-import halfback from './halfback.png'
+import halfback from './halfback.png';
+import {IconContext} from "react-icons";
 import {
     BrowserRouter as Router,
     Switch,
@@ -55,11 +56,19 @@ export default class Login extends Component {
               <h6>Powered By:</h6>
                <h5> NCS Technologies
               </h5>
-              <div style={{color: '',padding:'5px'}}>
-              <FaIcons.FaWhatsappSquare size={32}  />
-               <FaIcons.FaFacebookSquare size={32}  />
-                <FaIcons.FaLinkedinIn  size={32}/>
-                <AiIcons.AiFillMail size={32} />
+              <div style={{color: '',padding:'5px',}}>
+              <IconContext.Provider
+                  value={{ color: '#25d366', size: '50px' }} >
+              <FaIcons.FaWhatsappSquare size={45}  />
+          </IconContext.Provider>
+          <IconContext.Provider
+                  value={{ color: '#0e76a8', size: '50px' }} >
+                <FaIcons.FaLinkedinIn  size={45}/>
+          </IconContext.Provider>
+          <IconContext.Provider
+                  value={{ color: '#3c2ec0', size: '50px' }} >
+                <AiIcons.AiFillMail size={45} />
+                </IconContext.Provider>
                 </div>
 
             </div>
@@ -76,14 +85,6 @@ export default class Login extends Component {
                 <div className="form-groups">
                     <label>Password</label>
                     <input type="password" className="form-control" name="password" placeholder="Enter password" value={this.state.password}  onChange={this.handleChange}/>
-                </div>
-
-                <div className="form-groups">
-                    <div className="custom-control custom-checkbox">
-                    <p className="forgot-password text-right">
-                    Forgot <a href="#">password?</a>
-                    </p>
-                    </div>
                 </div>
                 {this.renderRedirect()}
                 <button className="button" onClick={this.setRedirect}>LOGIN</button>

@@ -12,8 +12,13 @@ import Signin from './signin.js';
 import SideBar from './sidebar.js';
 import AddAgent from './AddAgent.js';
 import Table from './Tabledata.js';
-import TableofAgent from './TableofAgent'
-
+import TableofAgent from './TableofAgent';
+import Logout from './Logout.js';
+function Home() {
+  return <div className="container">
+    <Login/>
+    </div>;
+}
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
 
@@ -60,6 +65,9 @@ function Navbar() {
           <Table />
         </Route><Route path="/AgentTable">
           <TableofAgent/>
+          </Route>
+          <Route path="/Logout">
+         <Logout/>
           </Route>
           </Switch>
       </Router>

@@ -26,7 +26,7 @@ export default class AddAgent extends Component {
                 </div>
                 <div className="form-group">
                     <label>Join On</label>
-                    <input type="datetime-local" className="form-control" placeholder="Join Date" value="2020-12-01T19:30" />
+                    <input type="datetime-local" className="form-control" placeholder="Join Date"  />
                 </div>
                 <div className="form-group">
                     <label>UserName Alloted.</label>

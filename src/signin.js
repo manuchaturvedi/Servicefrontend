@@ -35,7 +35,7 @@ export default class Signin extends Component {
                 </div>
                 <div className="form-group">
                     <label>Date and Time Alloted.</label>
-                    <input type="datetime-local" className="form-control" placeholder="date and time" value="2020-12-01T19:30" />
+                    <input type="datetime-local" className="form-control" placeholder="date and time"  />
                 </div>
                 <button className="button" >Add Booking</button>
             </form>
